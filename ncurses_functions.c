@@ -1786,6 +1786,17 @@ PHP_FUNCTION(ncurses_wborder)
 }
 /* }}} */
 
+/* {{{ proto int ncurses_pair_color(int pair)
+   set color with pair */
+PHP_FUNCTION(ncurses_color_pair)
+{
+	zend_long pair;
+
+	RETURN_LONG(COLOR_PAIR(pair));
+}
+/* }}} */
+
+
 #ifdef HAVE_NCURSES_ASSUME_DEFAULT_COLORS
 /* {{{ proto int ncurses_assume_default_colors(int fg, int bg)
    Defines default colors for color 0 */

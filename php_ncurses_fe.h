@@ -19,7 +19,7 @@
 
 #ifndef PHP_NCURSES_FE_H
 #define PHP_NCURSES_FE_H
-
+PHP_FUNCTION(ncurses_color_pair);
 PHP_FUNCTION(ncurses_addch);
 PHP_FUNCTION(ncurses_color_set);
 PHP_FUNCTION(ncurses_delwin);
