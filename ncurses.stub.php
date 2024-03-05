@@ -10,6 +10,7 @@ function ncurses_getch(): int { }
 function ncurses_has_colors(): bool { }
 function ncurses_init(): int { }
 function ncurses_init_pair(int $pair, int $fg, int $bg): int { }
+function ncurses_color_pair(int $pair): int {}
 function ncurses_move(int $y, int $x): int { }
 function ncurses_newpad(int $rows, int $cols): resource { }
 function ncurses_prefresh(resource $pad, int $pminrow, int $pmincol, int $sminrow, int $smincol, int $smaxrow, int $smaxcol): int { }
